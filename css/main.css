@@ -1,0 +1,189 @@
+body{
+    padding: 0; 
+    margin: 0;
+    overflow-x: hidden;
+
+    background-image:url("./images/cbg.jpg");
+}
+
+
+
+
+/* header */
+#myheader{
+	height: 135px;
+	background-color: #143175;
+
+}
+#myheader a,active{
+	font-family: 'Alfa Slab One';font-size: 50px;
+	color: white;
+    text-shadow: 5px 5px #152958;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+}
+#school-logo{
+	height: 136px;
+	width: 224px;
+}
+/* end of header */
+
+
+/* navigation css */
+#mynav{ 
+	width: 100%;
+	background-color: white; 
+	/*text-align: center;*/ 
+	font-family: Arial;
+    font-weight: bold;
+	border-bottom: 3px solid orange;
+	position: relative !important; 
+	z-index: 9999 !important;
+}
+#mynav a#main{
+	text-transform: none;
+}
+#mynav ul{ 
+	list-style-type: none; 
+	padding: 0; 
+	margin: 0; 
+}
+#mynav ul li{ 
+	display: inline-block; 
+	width: 200px;
+	padding-left: 25px;
+}
+#mynav ul li:hover{ 
+	background-color: #102e6e;
+
+}
+#mynav ul li a,visited{ 
+	color:black; 
+	padding: 15px 10px 15px 10px; 
+	display: block; 
+	text-decoration: none; 
+}
+#mynav ul li a:hover{ 
+	color:white; 
+	padding: 15px 10px 15px 10px; 
+	display: block; 
+	text-decoration: none; 
+}
+#mynav ul li:hover > a#main{ 
+	display: block; 
+	color:white;
+}
+#mynav ul li:hover > ul{ 
+	display: block;
+}
+#mynav ul ul{ 
+	position: absolute; 
+	text-align: left; 
+	display: none; 
+	background-color: #102e6e; 
+}
+#mynav ul ul li{ 
+	display: block; 
+}
+#mynav ul ul li a,visited{
+	color: white; 
+	padding: 10px 10px 10px 10px; 
+}
+#mynav ul ul li a:hover{
+	color: black; 
+	padding: 10px 10px 10px 10px; 
+}
+#mynav ul ul li:hover{ 
+	background-color: white;
+}
+#mynav ul ul li:hover > a#sub{
+	color: black;
+}
+#mynav ul ul ul{ 
+	min-width: 200px; 
+	background-color:  #102e6e; 
+	margin: -44px 0 0 126px; 
+}
+#mynav ul ul ul a,visited{
+	color:white;
+}
+/* end of navigation */
+
+
+ /* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 50px;
+  left: 0;
+  background-color: #102e6e ; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+#form{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+/* The sidebar links */
+.sidebar {
+	color: white;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-left: 50px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+} 
